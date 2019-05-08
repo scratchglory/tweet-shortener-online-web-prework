@@ -51,5 +51,5 @@ def shortened_tweet_truncator(array)
   else
     new_arr 
   end
-  binding.pry
+  # binding.pry
 end
