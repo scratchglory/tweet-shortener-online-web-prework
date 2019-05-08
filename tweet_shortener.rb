@@ -36,3 +36,20 @@ def bulk_tweet_shortener(tweet)
   end
 end
 
+def selective_tweet_shortener(tweets)
+  if tweets.length > 140
+    word_substituter(tweets)
+  else
+    tweets
+  end
+end
+
+def shortened_tweet_truncator(array)
+  new_arr = word_substituter(array)
+  if new_arr.length > 140 
+    "#{new_arr[1..140]}"
+  else
+    new_arr 
+  end
+  binding.pry
+end
